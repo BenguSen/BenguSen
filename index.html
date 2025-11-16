@@ -40,6 +40,22 @@
             margin-bottom: 30px;
         }
 
+        /* Profil Resmi Stili - YENİ EKLENDİ */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover; /* Resmin oranlarını koruyarak kırpar */
+            border-radius: 50%; /* Yuvarlak yapar */
+            border: 5px solid var(--primary-color); /* Mavi çerçeve */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05); /* Üzerine gelince hafif büyür */
+        }
+
         h1 {
             color: var(--primary-color);
             margin-bottom: 5px;
@@ -95,122 +111,3 @@
             padding-left: 20px;
             position: relative;
         }
-
-        li::before {
-            content: '\f058'; /* Check icon */
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: var(--primary-color);
-            position: absolute;
-            left: 0;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .skill-card {
-            background: #f9fafb;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e5e7eb;
-            text-align: center;
-        }
-
-        .skill-card i {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .skill-card h4 {
-            margin: 5px 0;
-            font-size: 1rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #9ca3af;
-        }
-
-        /* Mobil Uyumluluk */
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px;
-                padding: 20px;
-            }
-            h1 { font-size: 2rem; }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <header>
-            <h1>Bengü ŞEN</h1>
-            <div class="subtitle">Bilgisayar Bilimi Öğretmeni | Eğitim Teknolojileri | AI & Eğitim</div>
-            <p class="quote">"Vatanını en çok seven, işini en iyi yapandır."</p>
-            <a href="https://benguhoca.webnode.page/" target="_blank" class="cta-button">
-                <i class="fas fa-globe"></i> Web Sitemi Ziyaret Et
-            </a>
-        </header>
-
-        <section>
-            <h2><i class="fas fa-user-graduate"></i> Hakkımda</h2>
-            <div class="section-content">
-                <p>Teknoloji ve eğitimi bir araya getirmeyi seven bir <strong>Bilgisayar Bilimi</strong> öğretmeniyim. Öğrencilerim için sadece kodlamayı değil; düşünmeyi, tasarlamayı ve üretmeyi öğretmeyi hedefliyorum. Teknolojinin hızla değiştiği bu çağda, eğitim bilimlerini <strong>Yapay Zeka (AI)</strong> teknolojileriyle harmanlayarak geleceğin sınıflarını bugünden inşa etmeye çalışıyorum.</p>
-                <ul>
-                    <li>Şu anda <strong>Yapay Zeka araçlarının (Generative AI) eğitim süreçlerine entegrasyonu</strong> üzerine çalışıyorum.</li>
-                    <li>Öğrencilerime <strong>teknoloji destekli çalışma</strong> ve <strong>AI okuryazarlığı</strong> konularında rehberlik ediyorum.</li>
-                    <li>Mottom: <strong>"Düşün, Tasarla, Üret."</strong></li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2><i class="fas fa-tools"></i> Uzmanlık Alanlarım</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-robot"></i>
-                    <h4>Yapay Zeka & Eğitim</h4>
-                    <p>LLM, Prompt Mühendisliği</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h4>Bilgisayar Bilimi</h4>
-                    <p>Algoritma, Kodlama</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h4>Eğitim Teknolojileri</h4>
-                    <p>Hibrit Eğitim, LMS</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2><i class="fas fa-book-open"></i> Web Sitemde Neler Var?</h2>
-            <div class="section-content">
-                <ul>
-                    <li><strong>Yeni Nesil Öğrenme:</strong> Yapay zeka çağında öğrenci olmak.</li>
-                    <li><strong>Eğitim Süreçleri:</strong> Uzaktan eğitim ve verimli çalışma teknikleri.</li>
-                    <li><strong>Teknoloji Tavsiyeleri:</strong> BTK Akademi, Khan Academy vb. kaynaklar.</li>
-                    <li><strong>Değerler Eğitimi:</strong> Milli değerler ve teknoloji.</li>
-                </ul>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Bengü ŞEN - Bilgisayar Bilimi Öğretmeni</p>
-            <p>
-                <a href="https://benguhoca.webnode.page/" style="color: var(--primary-color); text-decoration: none;">benguhoca.webnode.page</a>
-            </p>
-        </footer>
-    </div>
-
-</body>
-</html>
