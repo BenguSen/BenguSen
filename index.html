@@ -1,29 +1,216 @@
-<h1 align="center">Merhaba, ben Bengü ŞEN! 👋</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengü ŞEN | Bilgisayar Bilimi Öğretmeni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb; /* Profesyonel Mavi */
+            --secondary-color: #1e40af;
+            --bg-color: #f3f4f6;
+            --text-color: #374151;
+            --card-bg: #ffffff;
+        }
 
-<h3 align="center">Bilgisayar Bilimi Öğretmeni | Eğitim Teknolojileri | AI & Eğitim</h3>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-<p align="center">
-  <em>"Vatanını en çok seven, işini en iyi yapandır."</em>
-</p>
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
 
-<p align="center">
-  <a href="https://benguhoca.webnode.page/">
-    <img src="https://img.shields.io/badge/Web_Sitemi_Ziyaret_Et-benguhoca.webnode.page-blue?style=for-the-badge&logo=firefox" alt="Website">
-  </a>
-</p>
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
 
----
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+        }
 
-### 👩‍🏫 Hakkımda
+        .subtitle {
+            font-size: 1.1rem;
+            color: #6b7280;
+            font-weight: 600;
+        }
 
-Teknoloji ve eğitimi bir araya getirmeyi seven bir **Bilgisayar Bilimi** öğretmeniyim. Öğrencilerim için sadece kodlamayı değil; düşünmeyi, tasarlamayı ve üretmeyi öğretmeyi hedefliyorum. Teknolojinin hızla değiştiği bu çağda, eğitim bilimlerini **Yapay Zeka (AI)** teknolojileriyle harmanlayarak geleceğin sınıflarını bugünden inşa etmeye çalışıyorum.
+        .quote {
+            font-style: italic;
+            color: #9ca3af;
+            margin-top: 10px;
+        }
 
-* 🔭 Şu anda **Yapay Zeka araçlarının (Generative AI) eğitim süreçlerine entegrasyonu** üzerine çalışıyorum.
-* 🌱 Öğrencilerime **teknoloji destekli çalışma**, **algoritmik düşünme** ve **AI okuryazarlığı** konularında rehberlik ediyorum.
-* 💡 Mottom: **"Düşün, Tasarla, Üret."**
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
 
----
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+        }
 
-### 🛠️ İlgi Alanlarım & Uzmanlıklar
+        h2 {
+            color: var(--text-color);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin-top: 40px;
+        }
 
-* **🤖 Yapay Zeka & Eğitim:** AI destekli ders materyali hazırlama, eğitimde LLM (Büyük Dil Modelleri) kullanımı, kişiselleştirilmiş öğren
+        .section-content {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: '\f058'; /* Check icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .skill-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .skill-card h4 {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Bengü ŞEN</h1>
+            <div class="subtitle">Bilgisayar Bilimi Öğretmeni | Eğitim Teknolojileri | AI & Eğitim</div>
+            <p class="quote">"Vatanını en çok seven, işini en iyi yapandır."</p>
+            <a href="https://benguhoca.webnode.page/" target="_blank" class="cta-button">
+                <i class="fas fa-globe"></i> Web Sitemi Ziyaret Et
+            </a>
+        </header>
+
+        <section>
+            <h2><i class="fas fa-user-graduate"></i> Hakkımda</h2>
+            <div class="section-content">
+                <p>Teknoloji ve eğitimi bir araya getirmeyi seven bir <strong>Bilgisayar Bilimi</strong> öğretmeniyim. Öğrencilerim için sadece kodlamayı değil; düşünmeyi, tasarlamayı ve üretmeyi öğretmeyi hedefliyorum. Teknolojinin hızla değiştiği bu çağda, eğitim bilimlerini <strong>Yapay Zeka (AI)</strong> teknolojileriyle harmanlayarak geleceğin sınıflarını bugünden inşa etmeye çalışıyorum.</p>
+                <ul>
+                    <li>Şu anda <strong>Yapay Zeka araçlarının (Generative AI) eğitim süreçlerine entegrasyonu</strong> üzerine çalışıyorum.</li>
+                    <li>Öğrencilerime <strong>teknoloji destekli çalışma</strong> ve <strong>AI okuryazarlığı</strong> konularında rehberlik ediyorum.</li>
+                    <li>Mottom: <strong>"Düşün, Tasarla, Üret."</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-tools"></i> Uzmanlık Alanlarım</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>Yapay Zeka & Eğitim</h4>
+                    <p>LLM, Prompt Mühendisliği</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Bilgisayar Bilimi</h4>
+                    <p>Algoritma, Kodlama</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h4>Eğitim Teknolojileri</h4>
+                    <p>Hibrit Eğitim, LMS</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-book-open"></i> Web Sitemde Neler Var?</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Yeni Nesil Öğrenme:</strong> Yapay zeka çağında öğrenci olmak.</li>
+                    <li><strong>Eğitim Süreçleri:</strong> Uzaktan eğitim ve verimli çalışma teknikleri.</li>
+                    <li><strong>Teknoloji Tavsiyeleri:</strong> BTK Akademi, Khan Academy vb. kaynaklar.</li>
+                    <li><strong>Değerler Eğitimi:</strong> Milli değerler ve teknoloji.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Bengü ŞEN - Bilgisayar Bilimi Öğretmeni</p>
+            <p>
+                <a href="https://benguhoca.webnode.page/" style="color: var(--primary-color); text-decoration: none;">benguhoca.webnode.page</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
